@@ -501,6 +501,7 @@
 			baseConfigurationReference = 5C47F751C6893100454CCAB9 /* Pods-Showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Showcase",
@@ -517,6 +518,7 @@
 			baseConfigurationReference = 09821BA807065EBC497E3C57 /* Pods-Showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Showcase",
