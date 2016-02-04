@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E975E45353C0E48443AEF8D /* Pods_Showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213AC8362E74D1E69257FB34 /* Pods_Showcase.framework */; };
 		70A43D6C1C63CC9B0028A59E /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A43D6B1C63CC9B0028A59E /* MaterialButton.swift */; };
+		70B0C4251C63D9DB0005FB70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4221C63D9DB0005FB70 /* Bolts.framework */; };
+		70B0C4261C63D9DC0005FB70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4221C63D9DB0005FB70 /* Bolts.framework */; };
+		70B0C4271C63D9DC0005FB70 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4231C63D9DB0005FB70 /* FBSDKCoreKit.framework */; };
+		70B0C4281C63D9DC0005FB70 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4231C63D9DB0005FB70 /* FBSDKCoreKit.framework */; };
+		70B0C4291C63D9DC0005FB70 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4241C63D9DB0005FB70 /* FBSDKLoginKit.framework */; };
+		70B0C42A1C63D9DC0005FB70 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4241C63D9DB0005FB70 /* FBSDKLoginKit.framework */; };
 		70BE26E71C63C1DC009F1C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE26E61C63C1DC009F1C63 /* AppDelegate.swift */; };
 		70BE26E91C63C1DC009F1C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE26E81C63C1DC009F1C63 /* ViewController.swift */; };
 		70BE26EC1C63C1DC009F1C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BE26EA1C63C1DC009F1C63 /* Main.storyboard */; };
@@ -37,7 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09821BA807065EBC497E3C57 /* Pods-Showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase/Pods-Showcase.release.xcconfig"; sourceTree = "<group>"; };
+		213AC8362E74D1E69257FB34 /* Pods_Showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C47F751C6893100454CCAB9 /* Pods-Showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase/Pods-Showcase.debug.xcconfig"; sourceTree = "<group>"; };
 		70A43D6B1C63CC9B0028A59E /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		70B0C4221C63D9DB0005FB70 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		70B0C4231C63D9DB0005FB70 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		70B0C4241C63D9DB0005FB70 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		70BE26E31C63C1DC009F1C63 /* Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BE26E61C63C1DC009F1C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70BE26E81C63C1DC009F1C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B0C4251C63D9DB0005FB70 /* Bolts.framework in Frameworks */,
+				70B0C4271C63D9DC0005FB70 /* FBSDKCoreKit.framework in Frameworks */,
+				70B0C4291C63D9DC0005FB70 /* FBSDKLoginKit.framework in Frameworks */,
+				1E975E45353C0E48443AEF8D /* Pods_Showcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,18 +84,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B0C4261C63D9DC0005FB70 /* Bolts.framework in Frameworks */,
+				70B0C4281C63D9DC0005FB70 /* FBSDKCoreKit.framework in Frameworks */,
+				70B0C42A1C63D9DC0005FB70 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265E749B307BE3BAF4233867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				213AC8362E74D1E69257FB34 /* Pods_Showcase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44D3B0D34281C8E6BA3C32F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C47F751C6893100454CCAB9 /* Pods-Showcase.debug.xcconfig */,
+				09821BA807065EBC497E3C57 /* Pods-Showcase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70B0C4211C63D9CC0005FB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70B0C4221C63D9DB0005FB70 /* Bolts.framework */,
+				70B0C4231C63D9DB0005FB70 /* FBSDKCoreKit.framework */,
+				70B0C4241C63D9DB0005FB70 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70BE26DA1C63C1DC009F1C63 = {
 			isa = PBXGroup;
 			children = (
 				70BE26E51C63C1DC009F1C63 /* Showcase */,
 				70BE26FA1C63C1DC009F1C63 /* ShowcaseTests */,
 				70BE26E41C63C1DC009F1C63 /* Products */,
+				44D3B0D34281C8E6BA3C32F7 /* Pods */,
+				265E749B307BE3BAF4233867 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +143,7 @@
 		70BE26E51C63C1DC009F1C63 /* Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				70B0C4211C63D9CC0005FB70 /* Frameworks */,
 				70BE27191C63C7DE009F1C63 /* Util */,
 				70BE27091C63C206009F1C63 /* Resources */,
 				70BE27081C63C200009F1C63 /* Model */,
@@ -166,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70BE27001C63C1DC009F1C63 /* Build configuration list for PBXNativeTarget "Showcase" */;
 			buildPhases = (
+				FCCCC9D7C4375905F6C139C4 /* Check Pods Manifest.lock */,
 				70BE26DF1C63C1DC009F1C63 /* Sources */,
 				70BE26E01C63C1DC009F1C63 /* Frameworks */,
 				70BE26E11C63C1DC009F1C63 /* Resources */,
+				3C6CA2BEC43032FEC8E88AD1 /* Embed Pods Frameworks */,
+				F74C4165AB5DE6D27B3EBFF0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +313,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C6CA2BEC43032FEC8E88AD1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Showcase/Pods-Showcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F74C4165AB5DE6D27B3EBFF0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Showcase/Pods-Showcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCCC9D7C4375905F6C139C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70BE26DF1C63C1DC009F1C63 /* Sources */ = {
@@ -397,8 +498,13 @@
 		};
 		70BE27011C63C1DC009F1C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C47F751C6893100454CCAB9 /* Pods-Showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Showcase",
+				);
 				INFOPLIST_FILE = Showcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmcbryde.Showcase;
@@ -408,8 +514,13 @@
 		};
 		70BE27021C63C1DC009F1C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09821BA807065EBC497E3C57 /* Pods-Showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Showcase",
+				);
 				INFOPLIST_FILE = Showcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmcbryde.Showcase;
@@ -421,6 +532,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Showcase",
+				);
 				INFOPLIST_FILE = ShowcaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmcbryde.ShowcaseTests;
@@ -433,6 +548,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Showcase",
+				);
 				INFOPLIST_FILE = ShowcaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmcbryde.ShowcaseTests;
