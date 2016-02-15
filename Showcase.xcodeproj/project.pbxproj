@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E975E45353C0E48443AEF8D /* Pods_Showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213AC8362E74D1E69257FB34 /* Pods_Showcase.framework */; };
+		702571F91C6651FD002B782B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702571F81C6651FD002B782B /* DataService.swift */; };
 		70A43D6C1C63CC9B0028A59E /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A43D6B1C63CC9B0028A59E /* MaterialButton.swift */; };
 		70B0C4251C63D9DB0005FB70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4221C63D9DB0005FB70 /* Bolts.framework */; };
 		70B0C4261C63D9DC0005FB70 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B0C4221C63D9DB0005FB70 /* Bolts.framework */; };
@@ -31,6 +32,8 @@
 		70BE27181C63C7A4009F1C63 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE27161C63C7A4009F1C63 /* MaterialView.swift */; };
 		70BE271B1C63C7ED009F1C63 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE271A1C63C7ED009F1C63 /* Constants.swift */; };
 		70BE271C1C63C7ED009F1C63 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BE271A1C63C7ED009F1C63 /* Constants.swift */; };
+		70E4359B1C7291AD00B12450 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4359A1C7291AD00B12450 /* FeedVC.swift */; };
+		70E4359D1C7292AB00B12450 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4359C1C7292AB00B12450 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		09821BA807065EBC497E3C57 /* Pods-Showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase/Pods-Showcase.release.xcconfig"; sourceTree = "<group>"; };
 		213AC8362E74D1E69257FB34 /* Pods_Showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C47F751C6893100454CCAB9 /* Pods-Showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Showcase/Pods-Showcase.debug.xcconfig"; sourceTree = "<group>"; };
+		702571F81C6651FD002B782B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		70A43D6B1C63CC9B0028A59E /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		70B0C4221C63D9DB0005FB70 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		70B0C4231C63D9DB0005FB70 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 		70BE270C1C63C27D009F1C63 /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		70BE27161C63C7A4009F1C63 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		70BE271A1C63C7ED009F1C63 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70E4359A1C7291AD00B12450 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		70E4359C1C7292AB00B12450 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		702571F71C6651DC002B782B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				702571F81C6651FD002B782B /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		70B0C4211C63D9CC0005FB70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +157,7 @@
 		70BE26E51C63C1DC009F1C63 /* Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				702571F71C6651DC002B782B /* Services */,
 				70B0C4211C63D9CC0005FB70 /* Frameworks */,
 				70BE27191C63C7DE009F1C63 /* Util */,
 				70BE27091C63C206009F1C63 /* Resources */,
@@ -150,7 +165,6 @@
 				70BE27071C63C1F5009F1C63 /* View */,
 				70BE27061C63C1EC009F1C63 /* Controller */,
 				70BE26E61C63C1DC009F1C63 /* AppDelegate.swift */,
-				70BE26E81C63C1DC009F1C63 /* ViewController.swift */,
 				70BE26EA1C63C1DC009F1C63 /* Main.storyboard */,
 				70BE26ED1C63C1DC009F1C63 /* Assets.xcassets */,
 				70BE26EF1C63C1DC009F1C63 /* LaunchScreen.storyboard */,
@@ -171,6 +185,8 @@
 		70BE27061C63C1EC009F1C63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				70BE26E81C63C1DC009F1C63 /* ViewController.swift */,
+				70E4359A1C7291AD00B12450 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -180,6 +196,7 @@
 			children = (
 				70BE27161C63C7A4009F1C63 /* MaterialView.swift */,
 				70A43D6B1C63CC9B0028A59E /* MaterialButton.swift */,
+				70E4359C1C7292AB00B12450 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -368,10 +385,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				70BE27171C63C7A4009F1C63 /* MaterialView.swift in Sources */,
+				70E4359B1C7291AD00B12450 /* FeedVC.swift in Sources */,
 				70BE26E91C63C1DC009F1C63 /* ViewController.swift in Sources */,
 				70BE26E71C63C1DC009F1C63 /* AppDelegate.swift in Sources */,
+				702571F91C6651FD002B782B /* DataService.swift in Sources */,
 				70BE271B1C63C7ED009F1C63 /* Constants.swift in Sources */,
 				70A43D6C1C63CC9B0028A59E /* MaterialButton.swift in Sources */,
+				70E4359D1C7292AB00B12450 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
