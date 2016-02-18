@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var backgroundImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupBackgoundParralaxEffect()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -97,6 +98,27 @@ class ViewController: UIViewController {
         let alertAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         alert.addAction(alertAction)
         presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func setupBackgoundParralaxEffect() {
+        // Set vertical effect
+        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y",
+            type: .TiltAlongVerticalAxis)
+        verticalMotionEffect.minimumRelativeValue = -15
+        verticalMotionEffect.maximumRelativeValue = 15
+        
+        // Set horizontal effect
+        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x",
+            type: .TiltAlongHorizontalAxis)
+        horizontalMotionEffect.minimumRelativeValue = -15
+        horizontalMotionEffect.maximumRelativeValue = 15
+        
+        // Create group to combine both
+        let group = UIMotionEffectGroup()
+        group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
+        
+        // Add both effects to your view
+        backgroundImage.addMotionEffect(group)
     }
 
 }

@@ -18,10 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copenhagen" translatesAutoresizingMaskIntoConstraints="NO" id="gZ7-SQ-DT5" userLabel="Background Image">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="gZ7-SQ-DT5" userLabel="Background Image">
+                                <rect key="frame" x="-15" y="-15" width="630" height="630"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="21" left="8" bottom="8" right="8"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg3-yB-RrK" userLabel="Facebook login">
                                 <rect key="frame" x="20" y="448" width="560" height="46"/>
@@ -40,20 +41,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.86740451388888884" green="0.86740451388888884" blue="0.86740451388888884" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gZ7-SQ-DT5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3es-Og-2a4"/>
+                            <constraint firstAttribute="bottom" secondItem="gZ7-SQ-DT5" secondAttribute="bottom" constant="-15" id="0pP-7T-J6d"/>
+                            <constraint firstItem="gZ7-SQ-DT5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-15" id="83y-xk-2yF"/>
                             <constraint firstAttribute="trailing" secondItem="O3L-Zl-qhR" secondAttribute="trailing" constant="150" id="9pB-2K-4sI"/>
                             <constraint firstItem="Cg3-yB-RrK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9w7-ha-c0w"/>
-                            <constraint firstItem="gZ7-SQ-DT5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E7c-oW-RRn"/>
-                            <constraint firstAttribute="trailing" secondItem="gZ7-SQ-DT5" secondAttribute="trailing" id="aMe-ig-Q35"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gZ7-SQ-DT5" secondAttribute="bottom" id="b0x-dj-avk"/>
+                            <constraint firstAttribute="trailing" secondItem="gZ7-SQ-DT5" secondAttribute="trailing" constant="-15" id="AAl-yb-xkV"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Cg3-yB-RrK" secondAttribute="bottom" constant="106" id="bIa-0h-1S9"/>
                             <constraint firstItem="O3L-Zl-qhR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="cmE-sJ-nJn"/>
                             <constraint firstItem="Cg3-yB-RrK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="448" id="iBd-cA-885"/>
                             <constraint firstItem="O3L-Zl-qhR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jYR-HT-Mr6"/>
                             <constraint firstAttribute="trailing" secondItem="Cg3-yB-RrK" secondAttribute="trailing" constant="20" id="pjE-r4-BwQ"/>
+                            <constraint firstItem="gZ7-SQ-DT5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-15" id="y8e-SC-hrH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="gZ7-SQ-DT5" id="VqL-o6-w95"/>
                         <segue destination="O00-fC-XDO" kind="show" identifier="loggedIn" id="1ee-4Q-xdv"/>
                     </connections>
                 </viewController>
@@ -97,8 +99,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Copenhagen" width="720" height="480"/>
         <image name="bugle_logo" width="600" height="500"/>
         <image name="facebookLoginButton" width="300" height="46"/>
+        <image name="forest" width="3264" height="2448"/>
     </resources>
 </document>
