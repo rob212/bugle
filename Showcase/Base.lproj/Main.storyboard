@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,7 +21,6 @@
                                 <rect key="frame" x="-15" y="-15" width="630" height="630"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <edgeInsets key="layoutMargins" top="21" left="8" bottom="8" right="8"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg3-yB-RrK" userLabel="Facebook login">
                                 <rect key="frame" x="20" y="448" width="560" height="46"/>
@@ -37,6 +35,11 @@
                                     <constraint firstAttribute="width" constant="300" id="3us-fJ-TMY"/>
                                     <constraint firstAttribute="height" constant="160" id="gbk-VR-Awf"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3us-fJ-TMY"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.86740451388888884" green="0.86740451388888884" blue="0.86740451388888884" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,13 +49,18 @@
                             <constraint firstAttribute="trailing" secondItem="O3L-Zl-qhR" secondAttribute="trailing" constant="150" id="9pB-2K-4sI"/>
                             <constraint firstItem="Cg3-yB-RrK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9w7-ha-c0w"/>
                             <constraint firstAttribute="trailing" secondItem="gZ7-SQ-DT5" secondAttribute="trailing" constant="-15" id="AAl-yb-xkV"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Cg3-yB-RrK" secondAttribute="bottom" constant="106" id="bIa-0h-1S9"/>
+                            <constraint firstItem="Cg3-yB-RrK" firstAttribute="top" secondItem="gZ7-SQ-DT5" secondAttribute="bottom" constant="-167" id="QbM-wr-SzQ"/>
+                            <constraint firstItem="Cg3-yB-RrK" firstAttribute="top" secondItem="gZ7-SQ-DT5" secondAttribute="bottom" constant="-167" id="b6f-OG-B7g"/>
                             <constraint firstItem="O3L-Zl-qhR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="cmE-sJ-nJn"/>
-                            <constraint firstItem="Cg3-yB-RrK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="448" id="iBd-cA-885"/>
                             <constraint firstItem="O3L-Zl-qhR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jYR-HT-Mr6"/>
                             <constraint firstAttribute="trailing" secondItem="Cg3-yB-RrK" secondAttribute="trailing" constant="20" id="pjE-r4-BwQ"/>
                             <constraint firstItem="gZ7-SQ-DT5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-15" id="y8e-SC-hrH"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QbM-wr-SzQ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="gZ7-SQ-DT5" id="VqL-o6-w95"/>
